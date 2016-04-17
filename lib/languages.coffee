@@ -22,7 +22,7 @@ module.exports = LANGUAGES =
     singleLineComment: ['//']
     ignorePrefix:      '}'
     foldPrefix:        '^'
-    
+
   CSS:
     nameMatchers:      ['.css']
     pygmentsLexer:     'css'
@@ -39,7 +39,7 @@ module.exports = LANGUAGES =
     foldPrefix:        '^'
 
   Clojure:
-    nameMatchers:      ['.clj', '.cljs']
+    nameMatchers:      ['.clj', '.cljs', /(.spacemacs)/]
     pygmentsLexer:     'clojure'
     singleLineComment: [';;']
     ignorePrefix:      '}'
@@ -138,7 +138,7 @@ module.exports = LANGUAGES =
     multiLineComment:  ['<!--', '', '-->']
     ignorePrefix:      '}'
     foldPrefix:        '^'
-    
+
   Jade:
     nameMatchers:      ['.jade']
     pygmentsLexer:     'jade'
@@ -296,7 +296,7 @@ module.exports = LANGUAGES =
     foldPrefix:        '^'
 
   Shell:
-    nameMatchers:      ['.sh']
+    nameMatchers:      ['.sh', /(.bash|.profile|.gitignore)/]
     pygmentsLexer:     'sh'
     highlightJS:       'bash'
     singleLineComment: ['#']
