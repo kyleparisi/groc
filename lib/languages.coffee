@@ -103,7 +103,7 @@ module.exports = LANGUAGES =
     singleLineComment: ['#']
     ignorePrefix:      '}'
     foldPrefix:        '^'
-
+    
   Go:
     nameMatchers:      ['.go']
     pygmentsLexer:     'go'
@@ -296,7 +296,7 @@ module.exports = LANGUAGES =
     foldPrefix:        '^'
 
   Shell:
-    nameMatchers:      ['.sh', /(.bash|.profile|.gitignore)/]
+    nameMatchers:      ['.sh', /(.bash|.profile|.gitignore|.example)/]
     pygmentsLexer:     'sh'
     highlightJS:       'bash'
     singleLineComment: ['#']
