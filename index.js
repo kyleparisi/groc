@@ -1,4 +1,4 @@
-require('coffee-script/register');
+require('coffee-register');
 
 module.exports = {
   PACKAGE_INFO: require('./package.json'),
